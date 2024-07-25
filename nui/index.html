@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STZ HUD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!--Player HUD -->
+    <div id="player-hud" class="player-hud">
+        <div class="status" id="health-status">
+            <i class="fas fa-heartbeat"></i>
+            <div class="progress">
+                <div class="progress-bar" id="health-bar" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="status" id="hunger-status">
+            <i class="fas fa-utensils"></i>
+            <div class="progress">
+                <div class="progress-bar" id="hunger-bar" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="status" id="thirst-status">
+            <i class="fas fa-tint"></i>
+            <div class="progress">
+                <div class="progress-bar" id="thirst-bar" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="status" id="armor-status">
+            <i class="fas fa-shield-alt"></i>
+            <div class="progress">
+                <div class="progress-bar" id="armor-bar" style="width: 0%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hud" class="hud">
+        <!-- Start Car HUD -->
+        <div class="speed">
+            <span id="speed-value">90</span> KM/H
+        </div>
+        <div class="bars">
+            <div class="bar fuel">
+                <i class="fas fa-gas-pump"></i>
+                <div class="progress">
+                    <div class="progress-bar" id="fuel-bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="bar damage">
+                <i class="fas fa-car-crash"></i>
+                <div class="progress">
+                    <div class="progress-bar" id="damage-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="street">
+            <i class="fas fa-map-pin"></i> 
+            <span id="street-name">ZANCUDO GRANDE VALLEY, ZANCUDO RIVER</span>
+        </div>        
+    </div>
+
+    <script src="js/player_hud.js"></script> <!-- Player HUD -->
+    <script src="js/script.js"></script> <!-- Car HUD-->
+</body>
+</html>
